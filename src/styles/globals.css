@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2 flex items-center gap-2;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-slate-800 mt-6 mb-3;
+}
+
+.prose p {
+  @apply text-slate-700 leading-relaxed mb-4 text-base;
+}
+
+.prose ul {
+  @apply list-disc list-inside space-y-2 mb-4 text-slate-700;
+}
+
+.prose ol {
+  @apply list-decimal list-inside space-y-2 mb-4 text-slate-700;
+}
